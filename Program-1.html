@@ -1,0 +1,23 @@
+<html>
+<body>
+  <script>
+    class Calculator {
+      calculate(a, b, op) {
+        a = parseFloat(a);
+        b = parseFloat(b);
+        if (op === "add") return a + b;
+        else if (op === "sub") return a - b;
+        else if (op === "mul") return a * b;
+        else if (op === "div") return b == 0 ? "Cannot divide by zero" : a / b;
+        else return "Invalid operation";
+      }
+    }
+    const a = prompt("Enter 1st number : ");
+    const b = prompt("Enter 2nd number : ");
+    const result = prompt("Enter operation to be performed (add,sub,mul,div) : ");
+    const cal = new Calculator();
+    alert("Result is : " + cal.calculate(a, b, result));
+  </script>
+</body>
+</html>
+

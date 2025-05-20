@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            let a=prompt("Enter a number");
+            let arr=[];
+            if (a % 2 === 0) {
+                for (i=0;i<a-1;i++){
+                    arr.push(i*2 +1);
+                }
+            }
+            else{
+                for (i=0;i<a;i++){
+                    arr.push(i*2 +1);
+                }
+            }
+            alert("Result is " + arr.join(","));
+        </script>
+    </body>
+</html>
